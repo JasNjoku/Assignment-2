@@ -2,21 +2,36 @@ CREATE DATABASE music_shop;
 USE `music_shop`;
 
 DROP TABLE IF EXISTS `Songs`;
-CREATE TABLE `Songs` (
-    `song_id` INT NOT NULL AUTO_INCREMENT,
-    `song_name` VARCHAR(255) NOT NULL,
-    `song_price` DECIMAL(5,2) NOT NULL,
-    `song_genre` VARCHAR(255) NOT NULL,
-    `song_artist` VARCHAR(255) NOT NULL,
-    PRIMARY KEY (`song_id`)
+CREATE TABLE Songs (
+  SongID INT NOT NULL AUTO_INCREMENT,
+  Title VARCHAR(255) NOT NULL,
+  ArtistID INT NOT NULL,
+  Genre VARCHAR(255),
+  ReleaseYear INT,
+  PRIMARY KEY (SongID),
+  FOREIGN KEY (ArtistID) REFERENCES Artists(ArtistID)
 );
 
-INSERT INTO `Songs` (`song_name`, `song_price`, `song_genre`, `song_artist`)
-VALUES
-    ("Shape of You", 200, "Pop", "Ed Sheeran"),
-    ("Uptown Funk", 200, "Funk", "Mark Ronson ft. Bruno Mars"),
-    ("Despacito", 220, "Latin Pop", "Luis Fonsi ft. Daddy Yankee"),
-    ("Thriller", 240, "Pop", "Michael Jackson"),
-    ("Billie Jean", 200, "Pop", "Michael Jackson"),
-    
-;
+DROP TABLE IF EXISTS `Artists`;
+CREATE TABLE Artists (
+  ArtistID INT NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(255) NOT NULL,
+  Country VARCHAR(255),
+  PRIMARY KEY (ArtistID)
+);
+
+DROP TABLE IF EXISTS `Albums`;
+CREATE TABLE Albums (
+  AlbumID INT NOT NULL AUTO_INCREMENT,
+  Title VARCHAR(255) NOT NULL,
+  ArtistID INT NOT NULL,
+  ReleaseYear INT,
+  PRIMARY KEY (AlbumID),
+  FOREIGN KEY (ArtistID) REFERENCES Artists(ArtistID)
+);
+
+
+
+
+
+
