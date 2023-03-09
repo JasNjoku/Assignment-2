@@ -1,1 +1,25 @@
 /* Add your own CSS under here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.album-images {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    background-image: url('images/coverImage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar {
+    display: flex;
+}
