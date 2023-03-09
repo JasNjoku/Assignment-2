@@ -12,14 +12,42 @@
 }
 
 .jumbotron {
-    background-image: url('images/coverImage.jpg');
-    background-size: cover;
-    background-position: center;
     height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.jumbotron > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron > .container > .row {
     display: flex;
     align-items: center;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url('images/coverImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
 .searchbar {
-    display: flex;
+    position: relative;
+}
+
+.searchbar > button {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

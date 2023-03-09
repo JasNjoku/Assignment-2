@@ -1,5 +1,4 @@
 <?php
-  // Get the song ID from the URL query parameter
   $songID = $_GET['id'];
   require_once('database/database.php');
   $query = "SELECT Songs.Title, Songs.Genre, Songs.ReleaseYear, Artists.Name, Artists.Country 
