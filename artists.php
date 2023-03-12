@@ -1,9 +1,9 @@
 <?php
 require_once('database/database.php');
-  $query = 'SELECT * FROM artists';
+  $query = 'SELECT * FROM Artists';
   $statement = $db->prepare($query);
   $statement->execute();
-  $artists = $statement->fetchAll();
+  $artists = $statement->fetchAll(PDO::FETCH_ASSOC);
   $statement->closeCursor();
 
   
