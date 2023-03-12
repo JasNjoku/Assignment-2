@@ -14,8 +14,7 @@
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone:</label>
-                            <input type="tel" class="form-control" id="phone" name="phone"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-456-7890" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message:</label>

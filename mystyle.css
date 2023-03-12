@@ -51,3 +51,8 @@
     top: 0;
     right: 0;
 }
+
+.navbar.bg-gradient {
+    background: linear-gradient(to right, #8bd5af, #5ca5e5);
+    color: #fff;
+}
