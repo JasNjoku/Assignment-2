@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Assignment 2 Project</h1>
+    <h1>Music Website</h1>
     <h2>Description</h2>
-    <h3>Brief Overview</h3>
-    <p>The Assignment 2 project is a (brief description of the project).</p>
+    <p>The Music Shop Website that shows various artists and their songs.</p>
     <h2>Installation</h2>
-    <p>To run this project, you will need to (describe any dependencies or requirements, and provide instructions for how to install them).</p>
+    <p>To run this website locally, you will need to have a web server (such as Apache) installed on your computer, along with PHP and MySQL. Clone this package into your IDE and run!</p>
+    <p>Once you have a web server set up, you can download the source code for the Music Shop Website and place it in your web server's document root directory. You will also need to import the database schema into your MySQL server.</p>
     <h2>Usage</h2>
-    <p>To use this project, (describe how to use the project, including any command-line arguments or other input needed).</p>
-    <h2>Contributing</h2>
-    <p>Contributions to this project are welcome. To contribute, (describe how to contribute, including any guidelines or requirements for contributing).</p>
-    <h2>License</h2>
-    <p>This project is licensed under the (insert license name) license.</p>
-    <h2>Contact</h2>
-    <p>If you have any questions or concerns about this project, please contact (insert your name and contact information).</p>
+    <p>To use the Music Shop Website, simply navigate to https://mysql07.comp.dkit.ie/D00245954/Assignment-2/.</p>
   </body>
 </html>
