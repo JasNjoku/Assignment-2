@@ -35,6 +35,7 @@
     <main class="container mt-5">
 
         <div class="row">
+        <h2>All Songs</h2>
             <?php foreach ($songs as $song) : ?>
             <div class="col-md-4 mb-4">
                 <div class="card p-4">

@@ -19,7 +19,7 @@ CREATE TABLE Songs (
   Genre VARCHAR(255),
   ReleaseYear INT,
   PRIMARY KEY (SongID),
-  FOREIGN KEY (ArtistID) REFERENCES Artists(ArtistID)
+  FOREIGN KEY (ArtistID) REFERENCES Artists(ArtistID) ON DELETE CASCADE
 );
 
 CREATE TABLE Albums (
@@ -28,7 +28,7 @@ CREATE TABLE Albums (
   ArtistID INT NOT NULL,
   ReleaseYear INT,
   PRIMARY KEY (AlbumID),
-  FOREIGN KEY (ArtistID) REFERENCES Artists(ArtistID)
+  FOREIGN KEY (ArtistID) REFERENCES Artists(ArtistID) ON DELETE CASCADE
 );
 
 INSERT INTO Artists (Name, Country) VALUES

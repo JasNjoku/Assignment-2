@@ -22,7 +22,7 @@
                         playlists.</p>
                 </div>
                 <div class="col-md-6">
-                    <form class="form-inline my-2 my-lg-0 searchbar" action="">
+                    <form class="form-inline my-2 my-lg-0 searchbar" action="searchSong.php">
                         <input class="form-control mr-sm-2 rounded-pill" type="search" name="search"
                             placeholder="Search songs..." aria-label="Search">
                         <button class="btn btn-primary my-2 my-sm-0 rounded-pill" type="submit">Search</button>

@@ -27,13 +27,13 @@
     <div class="collapse navbar-collapse" id="navbarsExample07">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="page-1.php">View Artists</a>
+          <a class="nav-link" aria-current="page" href="artists.php">View Artists</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="page-2.php">View Albums</a>
+          <a class="nav-link" aria-current="page" href="album.php">View Albums</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="page-3.php">Contact Us</a>
+          <a class="nav-link" aria-current="page" href="contact.php">Contact Us</a>
         </li>
       </ul>
     </div>

@@ -1,2 +1,2 @@
 # Assignment-2
-<p>Repo for my PHP Project</p>
+<p>This is my music project website using bootstrap and php.</p>

@@ -5,6 +5,8 @@ require_once('database/database.php');
   $statement->execute();
   $artists = $statement->fetchAll();
   $statement->closeCursor();
+
+  
 ?>
 
 
@@ -35,7 +37,7 @@ require_once('database/database.php');
                 <tr>
                     <th>Artist Name</th>
                     <th>Artist Country</th>
-                    <th>Actions</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -44,8 +46,6 @@ require_once('database/database.php');
                     <td><?php echo $artist['Name']; ?></td>
                     <td><?php echo $artist['Country']; ?></td>
                     <td>
-                        <a href="edit_artist.php?artist_id=<?php echo $artist['ArtistID']; ?>"
-                            class="btn btn-primary">Edit</a>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                             data-bs-target="#delete-modal-<?php echo $artist['ArtistID']; ?>">Delete</button>
                         <!-- Delete confirmation modal -->
@@ -61,10 +61,10 @@ require_once('database/database.php');
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        Are you sure you want to delete this artist?
+                                        This action cannot be undone and will delete the artist and all songs and albums associated with it.
                                     </div>
                                     <div class="modal-footer">
-                                        <form method="POST">
+                                        <form method="POST" action="delete.php">
                                             <input type="hidden" name="artist_id"
                                                 value="<?php echo $artist['ArtistID']; ?>">
                                             <button type="submit" class="btn btn-danger" name="delete_artist"
