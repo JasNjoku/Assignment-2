@@ -1,5 +1,5 @@
 <?php 
-    $dsn = 'mysql:host=localhost;dbname=music_shop';
+    $dsn = 'mysql:host=localhost;dbname=D00245954';
     $username = "D00245954";
     $password = '7jvcYgBE';
     try {
@@ -9,3 +9,4 @@
         include('database_error.php');
         exit();
     }
+?>
