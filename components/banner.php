@@ -23,8 +23,8 @@
                 </div>
                 <div class="col-md-6">
                     <form class="form-inline my-2 my-lg-0 searchbar" action="">
-                        <input class="form-control mr-sm-2 rounded-pill" type="search" name="search" placeholder="Search songs..."
-                            aria-label="Search">
+                        <input class="form-control mr-sm-2 rounded-pill" type="search" name="search"
+                            placeholder="Search songs..." aria-label="Search">
                         <button class="btn btn-primary my-2 my-sm-0 rounded-pill" type="submit">Search</button>
                     </form>
                 </div>
@@ -33,6 +33,17 @@
     </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+    window.onload = function() {
+        const searchbar = document.querySelector('.searchbar');
+        searchbar.style.transform = 'translateY(0)';
+        searchbar.style.opacity = '1';
+
+        const heading = document.querySelector('.jumbotron .col-md-6:first-child');
+        heading.style.transform = 'translateY(0)';
+        heading.style.opacity = '1';
+    };
+    </script>
 </body>
 
 </html>

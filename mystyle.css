@@ -12,7 +12,7 @@
 }
 
 .jumbotron {
-    height: 500px;
+    height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -44,7 +44,17 @@
 
 .searchbar {
     position: relative;
-}
+    transform: translateY(80%);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+  
+  .jumbotron .col-md-6:first-child {
+    transform: translateY(80%);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+  
 
 .searchbar > button {
     position: absolute;
@@ -55,4 +65,45 @@
 .navbar.bg-gradient {
     background: linear-gradient(to right, #8bd5af, #5ca5e5);
     color: #fff;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.controls span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #1db954;
+  border: none;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.controls span:hover {
+  background-color: #1db954;
+  color: #fff;
+}
+
+.controls span i {
+  font-size: 1.5rem;
+}
+
+.controls span.play i {
+  font-size: 2rem;
+}
+
+.controls span.play {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 2rem;
 }

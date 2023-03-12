@@ -21,6 +21,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="mystyle.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,11 +37,10 @@
         <div class="row">
             <?php foreach ($songs as $song) : ?>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card p-4">
                     <img src="images/music.png" class="album-images" alt="Song Image">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $song['Title']; ?></h5>
-                        <p class="card-text">Artist: <?php echo $song['ArtistID']; ?></p>
                         <p class="card-text">Genre: <?php echo $song['Genre']; ?></p>
                         <p class="card-text">Release Year: <?php echo $song['ReleaseYear']; ?></p>
                         <a href="song.php?id=<?php echo $song['SongID']; ?>" class="btn btn-primary">Listen Now</a>

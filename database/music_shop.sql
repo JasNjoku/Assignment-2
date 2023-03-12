@@ -1,5 +1,5 @@
-CREATE DATABASE music_shop;
-USE `music_shop`;
+-- CREATE DATABASE music_shop;
+-- USE `music_shop`;
 
 DROP TABLE IF EXISTS `Songs`;
 DROP TABLE IF EXISTS `Albums`;
